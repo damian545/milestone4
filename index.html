@@ -2,8 +2,7 @@
 <html lang="en-us">
   <head>
     <meta charset="UTF-8" />
-    <!-- We need the following responsive meta tag to ensure things scale correctly across varying
-        devices. -->
+
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
@@ -11,7 +10,6 @@
 
     <title>MILESTONE 4</title>
 
-    <!-- We need to bring in the bootstrap CSS -->
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
@@ -21,104 +19,55 @@
   </head>
 
   <body>
-    <!-- NavBar (copied and pasted from WC3) -->
-    <!-- Static navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">      
-      <a class="navbar-brand"><p>MY RESUME</p></a>
-      <button
-        class="navbar-toggler"
-        data-toggle="collapse"
-        data-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
+    <nav class="navbar navbar-expand-lg navbar">
+      <a class="navbar-brand" href="portfolio.html"><p>MY PORTFOLIO</p></a>
+      
+      <div class="btn-group">
+        <a
+          class="dropdown-item"
+          href="https://au.linkedin.com/in/damian-tapp-584b56198"
+          >Linkedin</a
+        >
 
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
-         
-          
-          <li class="nav-item dropdown">
-            <a
-              class="nav-link dropdown-toggle"
-              href="#"
-              id="navbarDropdown"
-              role="button"
-              data-toggle="dropdown"
-              aria-haspopup="true"
-              aria-expanded="false"
-            >
-              My contact details.
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="#">Mobile 1234567890</a>
-              <a class="dropdown-item" href="https://login.live.com/login.srf?wa=wsignin1.0&rpsnv=13&ct=1587121851&rver=7.3.6962.0&wp=MBI_SSL_SHARED&wreply=https:%2F%2Fonedrive.live.com%2Fedit.aspx%3Fcid%3D5bad1abab7f8b5fd%26page%3Dview%26resid%3D5BAD1ABAB7F8B5FD!117%26parId%3D5BAD1ABAB7F8B5FD!115%26app%3DWord&lc=1033&id=250206&cbcxt=sky&cbcxt=sky">dam180@hotmail.com</a>
-              <a class="dropdown-item" href="https://au.linkedin.com/in/damian-tapp-584b56198">Linkedin</a>
-              <a class="dropdown-item" href="https://github.com/damian545">Github</a>              
-              <div class="dropdown-divider"></div>
-              
-            </div>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav mr-auto">
-               
-                
-                <div class = "container">
-                    <p>
-                     <div id="button" >
-                       
-                       <a href="uni.html">Languages I know</a>
-                       
-                         </p>
-                       
-                   </div>
-                  
-                  
-                     
-                    
-                 
-                  
-                </nav> 
-                <div class="card-body"> 
-              
-                    <h1>Damian Tapp</h1>
-                    
-                    
-                </div>
-                    <div class="row">
+        <a class="dropdown-item" href="https://github.com/damian545">Github</a>
+        <a
+          class="dropdown-item"
+          href="https://login.live.com/login.srf?wa=wsignin1.0&rpsnv=13&ct=1587121851&rver=7.3.6962.0&wp=MBI_SSL_SHARED&wreply=https:%2F%2Fonedrive.live.com%2Fedit.aspx%3Fcid%3D5bad1abab7f8b5fd%26page%3Dview%26resid%3D5BAD1ABAB7F8B5FD!117%26parId%3D5BAD1ABAB7F8B5FD!115%26app%3DWord&lc=1033&id=250206&cbcxt=sky&cbcxt=sky"
+          >dam180@hotmail.com</a
+        >
+        <a class="dropdown-item" href="#">Mobile 1234567890</a>
+      </div>
+    </nav>
+    <div class="card-body">
+      <h1>Damian Tapp</h1>
+      <h2>Adelaide 5047</h2>
+      <div class="row">
         <div class="col-lg-3">
-          <img class="img img-thumbnail" src="https://attachment.outlook.live.net/owa/MSA%3ADAM180%40hotmail.com/service.svc/s/GetAttachmentThumbnail?id=AQMkADAwATZiZmYAZC05ZmFiLWI1ZjMtMDACLTAwCgBGAAADxeHU0ki%2BMEqWo4RJgW6WYgcA2emy4VqqikCQtSnD4NJvcgAAAgEMAAAA2emy4VqqikCQtSnD4NJvcgADzgW7FQAAAAESABAAdbGLvzvzp0eZ1Ly0I47q7Q%3D%3D&thumbnailType=2&owa=outlook.live.com&scriptVer=2020042702.14&isc=1&X-OWA-CANARY=ogZRSQ1K8kKFdAJO5OSGToBdlpZd9dcYrHRjEwtJQiWlY431at_sRqj9KGoOosq8ardOUYProaM.&token=eyJhbGciOiJSUzI1NiIsImtpZCI6IjU2MzU4ODUyMzRCOTI1MkRERTAwNTc2NkQ5RDlGMjc2NTY1RjYzRTIiLCJ4NXQiOiJWaldJVWpTNUpTM2VBRmRtMmRueWRsWmZZLUkiLCJ0eXAiOiJKV1QifQ.eyJvcmlnaW4iOiJodHRwczovL291dGxvb2subGl2ZS5jb20iLCJ2ZXIiOiJFeGNoYW5nZS5DYWxsYmFjay5WMSIsImFwcGN0eHNlbmRlciI6Ik93YURvd25sb2FkQDg0ZGY5ZTdmLWU5ZjYtNDBhZi1iNDM1LWFhYWFhYWFhYWFhYSIsImlzc3JpbmciOiJXVyIsImFwcGN0eCI6IntcIm1zZXhjaHByb3RcIjpcIm93YVwiLFwicHJpbWFyeXNpZFwiOlwiUy0xLTI4MjctNDQyMzY1LTI2Nzg4MzA1NzlcIixcInB1aWRcIjpcIjE4OTk5NDU4ODY3MjU2MTlcIixcIm9pZFwiOlwiMDAwNmJmZmQtOWZhYi1iNWYzLTAwMDAtMDAwMDAwMDAwMDAwXCIsXCJzY29wZVwiOlwiT3dhRG93bmxvYWRcIn0iLCJuYmYiOjE1ODkxNjg2MDksImV4cCI6MTU4OTE2OTIwOSwiaXNzIjoiMDAwMDAwMDItMDAwMC0wZmYxLWNlMDAtMDAwMDAwMDAwMDAwQDg0ZGY5ZTdmLWU5ZjYtNDBhZi1iNDM1LWFhYWFhYWFhYWFhYSIsImF1ZCI6IjAwMDAwMDAyLTAwMDAtMGZmMS1jZTAwLTAwMDAwMDAwMDAwMC9hdHRhY2htZW50Lm91dGxvb2subGl2ZS5uZXRAODRkZjllN2YtZTlmNi00MGFmLWI0MzUtYWFhYWFhYWFhYWFhIiwiaGFwcCI6Im93YSJ9.NsZSbt0KuBvhmcNLHS5DbPIppqCOaGJ-WR2XviOWd99CwHy6SaWX7C_C2xrdaxYQZm1xtjvFGbSlSF9eh1h4KaTSYoJJL3J3B991S0XBHBpvFLwl7Lxuu-Y3F1iicvB1ExMX9gh8RIJpWj_feBstEKPnGVWPWLWF8ZHZFhiY93u1GlnYX4vj2mqa4dJNZA1iQ4cZ0fR-TDAHIuxHw50A16O26-ycMe379U4Ujv6SkaU93GygXKHg-NF0ph82xKM1WIbgDB140Kgm8BJxn38Rs_Sl-z_7Cd_FSIcAFPl266z7TCiu2aOkxZ3jmrJRbgiYeovX0hK6oYBa-TF1PVhFpA&animation=true" alt="Profile picture"/>
+          
+            <img
+              class="img img-thumbnail"
+              src="https://attachment.outlook.live.net/owa/MSA%3ADAM180%40hotmail.com/service.svc/s/GetAttachmentThumbnail?id=AQMkADAwATZiZmYAZC05ZmFiLWI1ZjMtMDACLTAwCgBGAAADxeHU0ki%2BMEqWo4RJgW6WYgcA2emy4VqqikCQtSnD4NJvcgAAAgEMAAAA2emy4VqqikCQtSnD4NJvcgAD0h1QHQAAAAESABAAzaL9KU6v4EmPSIk7P8ix8Q%3D%3D&thumbnailType=2&owa=outlook.live.com&scriptVer=2020051101.02&isc=1&X-OWA-CANARY=PszutJlbmEy0JgXB1OJ-VRB2iDQj-tcY40AJgT7rdx7eBgiMySz1p79PNExclbDGIm9TxINiU2g.&token=eyJhbGciOiJSUzI1NiIsImtpZCI6IjU2MzU4ODUyMzRCOTI1MkRERTAwNTc2NkQ5RDlGMjc2NTY1RjYzRTIiLCJ4NXQiOiJWaldJVWpTNUpTM2VBRmRtMmRueWRsWmZZLUkiLCJ0eXAiOiJKV1QifQ.eyJvcmlnaW4iOiJodHRwczovL291dGxvb2subGl2ZS5jb20iLCJ1YyI6Ijc1N2FjZTFkNDRmMTQ3YmNiMDdhMDFhZTZlYTYwMzJlIiwidmVyIjoiRXhjaGFuZ2UuQ2FsbGJhY2suVjEiLCJhcHBjdHhzZW5kZXIiOiJPd2FEb3dubG9hZEA4NGRmOWU3Zi1lOWY2LTQwYWYtYjQzNS1hYWFhYWFhYWFhYWEiLCJpc3NyaW5nIjoiV1ciLCJhcHBjdHgiOiJ7XCJtc2V4Y2hwcm90XCI6XCJvd2FcIixcInByaW1hcnlzaWRcIjpcIlMtMS0yODI3LTQ0MjM2NS0yNjc4ODMwNTc5XCIsXCJwdWlkXCI6XCIxODk5OTQ1ODg2NzI1NjE5XCIsXCJvaWRcIjpcIjAwMDZiZmZkLTlmYWItYjVmMy0wMDAwLTAwMDAwMDAwMDAwMFwiLFwic2NvcGVcIjpcIk93YURvd25sb2FkXCJ9IiwibmJmIjoxNTg5NjkzMzI3LCJleHAiOjE1ODk2OTM5MjcsImlzcyI6IjAwMDAwMDAyLTAwMDAtMGZmMS1jZTAwLTAwMDAwMDAwMDAwMEA4NGRmOWU3Zi1lOWY2LTQwYWYtYjQzNS1hYWFhYWFhYWFhYWEiLCJhdWQiOiIwMDAwMDAwMi0wMDAwLTBmZjEtY2UwMC0wMDAwMDAwMDAwMDAvYXR0YWNobWVudC5vdXRsb29rLmxpdmUubmV0QDg0ZGY5ZTdmLWU5ZjYtNDBhZi1iNDM1LWFhYWFhYWFhYWFhYSIsImhhcHAiOiJvd2EifQ.GjAC8CQdHZq0YVOIp0ZpJ6olI31wQpFwJ--6gfELTGFJOjhC7eve8T1BlH3bKEJwEd3f0T_69vypGGHgGll2NV5tJMfcQp53RKAKFCX_7k5U62Dw5aYtST5ItSp_8z95KoCowy_hWAsp55SZRKXGiFXDUtaIVmDs56_UMieuyNZ5kxof8eJvkoHfMox74kEhsb_zu0C9PQfVLfEch5hKAUecUUO56Rd_Q7D2YSdwAgmEG5YyAb61RcSo5--jueSt0VyR0Bi50gOpML1ICRxusb8JZYd44LbdkFxKph0zfW14V9Q5Z_klxTEaBadK52QdLUarbKm50GG52Tjq2FX7EA&animation=true"
+              alt="Profile picture"
+            />
+          </a>
+          <div class="footer-text">An original Website by Damian Tapp.</div>
         </div>
         <div class="col-lg-6">
-          
-        <h1>My History</h1>
-              
-            
-      <h3>
-          Before I started this course, all of the coding languages were alien to me. In my working background, I have no use
-          for any of this type of thing. So I had to start from scratch and if I missed anything during my lesson at University, I had to do all of my investigating when I got home 
-          from my work. This didn't leave me much time to do my homework and I managed to get by, considering my circumstances.
-          Some of the languages were straight forward, while others are quite difficult because I don't use them on a day to day basis.
-          So click on "Languages I know" to see what I have learnt, thanks for stopping by.
-      </h3>
+          <h1>SUMMARY</h1>
+
+          <h3>
+            I have no experience with developing, I am studying to do so at the moment.
+          </h3>
+        </div>
       </div>
-      <nav class="navbar fixed-bottom footer">
-        <div class="footer-text">An original Website by Damian Tapp.</div>
-      </nav>
-                              
-                          
-      
-                          
-                                   
-          
-                                
+    </div>
+
     <script
       src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
       integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
       crossorigin="anonymous"
     ></script>
-    <link rel="stylesheet" href="style.css"><link>
+    <link rel="stylesheet" href="style.css" /><link />
     <script
       src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
       integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
